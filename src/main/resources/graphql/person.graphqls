@@ -1,0 +1,18 @@
+type Person {
+	personId:ID
+	firstName:String
+	lastName:String
+}
+
+type ResponseEntity{
+	message:String
+}
+
+type Mutation {
+	createPerson(firstName:String,lastName:String):ResponseEntity
+}
+
+type Query {
+	getPerson:[Person]
+}
+
